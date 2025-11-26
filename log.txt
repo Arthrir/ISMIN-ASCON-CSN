@@ -1,0 +1,223 @@
+Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+vmap LIB_RTL LIB/LIB_RTL 
+Modifying modelsim.ini
+Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+vmap LIB_BENCH LIB/LIB_BENCH 
+Modifying modelsim.ini
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:33 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/ascon_pack.sv 
+-- Compiling package ascon_pack
+
+Top level modules:
+	--none--
+End time: 04:37:33 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:33 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/addition_constante.sv 
+-- Compiling module addition_constante
+-- Importing package ascon_pack
+
+Top level modules:
+	addition_constante
+End time: 04:37:33 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:33 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/sbox.sv 
+-- Compiling module sbox
+
+Top level modules:
+	sbox
+End time: 04:37:33 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:33 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/couche_substitution.sv 
+-- Compiling module couche_substitution
+-- Importing package ascon_pack
+
+Top level modules:
+	couche_substitution
+End time: 04:37:34 on May 15,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:34 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/diffusion_lineaire.sv 
+-- Compiling module diffusion_lineaire
+-- Importing package ascon_pack
+
+Top level modules:
+	diffusion_lineaire
+End time: 04:37:34 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:34 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/registre.sv 
+-- Compiling module registre
+-- Importing package ascon_pack
+
+Top level modules:
+	registre
+End time: 04:37:34 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:34 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/permutation.sv 
+-- Compiling module permutation
+-- Importing package ascon_pack
+
+Top level modules:
+	permutation
+End time: 04:37:34 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:34 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/xor_up.sv 
+-- Compiling module xor_up
+-- Importing package ascon_pack
+
+Top level modules:
+	xor_up
+End time: 04:37:34 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:34 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/xor_down.sv 
+-- Compiling module xor_down
+-- Importing package ascon_pack
+
+Top level modules:
+	xor_down
+End time: 04:37:34 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:34 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/permutation_xor.sv 
+-- Compiling module permutation_xor
+-- Importing package ascon_pack
+
+Top level modules:
+	permutation_xor
+End time: 04:37:34 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:34 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/fsm_moore.sv 
+-- Compiling module fsm_moore
+-- Importing package ascon_pack
+** Error: (vlog-13069) ./SRC/RTL/fsm_moore.sv(271): near "endcase": syntax error, unexpected endcase.
+End time: 04:37:35 on May 15,2025, Elapsed time: 0:00:01
+Errors: 1, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:35 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/ascon_top.sv 
+-- Compiling module ascon_top
+-- Importing package ascon_pack
+
+Top level modules:
+	ascon_top
+End time: 04:37:35 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:35 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/registre_cipher_tag.sv 
+-- Compiling module registre_cipher_tag
+-- Importing package ascon_pack
+
+Top level modules:
+	registre_cipher_tag
+End time: 04:37:35 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:35 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/permutation_xor_top.sv 
+-- Compiling module permutation_xor_top
+-- Importing package ascon_pack
+
+Top level modules:
+	permutation_xor_top
+End time: 04:37:35 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:35 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/counter_double_init.sv 
+-- Compiling module counter_double_init
+-- Importing package ascon_pack
+
+Top level modules:
+	counter_double_init
+End time: 04:37:35 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:35 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_RTL ./SRC/RTL/mux_xor_down.sv 
+-- Compiling module mux_xor_down
+-- Importing package ascon_pack
+
+Top level modules:
+	mux_xor_down
+End time: 04:37:35 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:35 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_BENCH -L LIB_RTL SRC/BENCH/addition_constante_tb.sv 
+-- Compiling module addition_constante_tb
+-- Importing package LIB_RTL.ascon_pack
+
+Top level modules:
+	addition_constante_tb
+End time: 04:37:36 on May 15,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:36 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_BENCH -L LIB_RTL SRC/BENCH/couche_substitution_tb.sv 
+-- Compiling module couche_substitution_tb
+-- Importing package LIB_RTL.ascon_pack
+
+Top level modules:
+	couche_substitution_tb
+End time: 04:37:36 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:36 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_BENCH -L LIB_RTL SRC/BENCH/diffusion_lineaire_tb.sv 
+-- Compiling module diffusion_lineaire_tb
+-- Importing package LIB_RTL.ascon_pack
+
+Top level modules:
+	diffusion_lineaire_tb
+End time: 04:37:36 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:36 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_BENCH -L LIB_RTL SRC/BENCH/permutation_tb.sv 
+-- Compiling module permutation_tb
+-- Importing package LIB_RTL.ascon_pack
+
+Top level modules:
+	permutation_tb
+End time: 04:37:36 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:36 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_BENCH -L LIB_RTL SRC/BENCH/permutation_xor_tb.sv 
+-- Compiling module permutation_xor_tb
+-- Importing package LIB_RTL.ascon_pack
+
+Top level modules:
+	permutation_xor_tb
+End time: 04:37:36 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 04:37:36 on May 15,2025
+vlog -sv "+acc" -svinputport=net -work LIB_BENCH -L LIB_RTL SRC/BENCH/ascon_top_tb.sv 
+-- Compiling module ascon_top_tb
+-- Importing package LIB_RTL.ascon_pack
+
+Top level modules:
+	ascon_top_tb
+End time: 04:37:36 on May 15,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl

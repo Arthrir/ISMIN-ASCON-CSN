@@ -1,0 +1,51 @@
+# Faire : source compile_ascon -> log.txt afin de récupérer le texte dans un fichier texte (log.txt) et de pouvoir faire ctrl+f pour chercher les erreurs plus vite
+
+
+# Supprime les librairies existantes et leurs contenu
+vdel -lib LIB_RTL -all
+vdel -lib LIB_BENCH -all
+
+# Construit de nouvelles librairies avec "vlib" et "vmap"
+vlib LIB/LIB_RTL
+vmap LIB_RTL LIB/LIB_RTL
+vlib LIB/LIB_BENCH
+vmap LIB_BENCH LIB/LIB_BENCH
+
+# Défini les options de compilation pour tous les fichiers
+VLOG_OPTS="-sv +acc -svinputport=net"
+
+# Compile toutes les sources RTL avec "vlog"
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/ascon_pack.sv
+
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/addition_constante.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/sbox.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/couche_substitution.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/diffusion_lineaire.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/registre.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/permutation.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/xor_up.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/xor_down.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/permutation_xor.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/fsm_moore.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/ascon_top.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/registre_cipher_tag.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/permutation_xor_top.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/counter_double_init.sv
+vlog $VLOG_OPTS -work LIB_RTL ./SRC/RTL/mux_xor_down.sv
+
+# Compile toutes les sources BENCH avec "vlog"
+vlog $VLOG_OPTS -work LIB_BENCH -L LIB_RTL SRC/BENCH/addition_constante_tb.sv
+vlog $VLOG_OPTS -work LIB_BENCH -L LIB_RTL SRC/BENCH/couche_substitution_tb.sv
+vlog $VLOG_OPTS -work LIB_BENCH -L LIB_RTL SRC/BENCH/diffusion_lineaire_tb.sv
+vlog $VLOG_OPTS -work LIB_BENCH -L LIB_RTL SRC/BENCH/permutation_tb.sv
+vlog $VLOG_OPTS -work LIB_BENCH -L LIB_RTL SRC/BENCH/permutation_xor_tb.sv
+vlog $VLOG_OPTS -work LIB_BENCH -L LIB_RTL SRC/BENCH/ascon_top_tb.sv
+
+# Simulation
+# /!\ Décommenter la simulation souhaitée (n'en décommenter qu'une à la fois)
+# vsim -L LIB_RTL LIB_BENCH.addition_constante_tb
+# vsim -L LIB_RTL LIB_BENCH.couche_substitution_tb
+# vsim -L LIB_RTL LIB_BENCH.diffusion_lineaire_tb
+# vsim -L LIB_RTL LIB_BENCH.permutation_tb
+# vsim -L LIB_RTL LIB_BENCH.permutation_xor_tb
+# vsim -L LIB_RTL LIB_BENCH.ascon_top_tb
